@@ -745,6 +745,21 @@ img {
   background-color: var(--accent-color);
 }
 
+.email-subscribe {
+  padding-top: 72px;
+  padding-bottom: 94px;
+  margin-left: 93px;
+}
+
+.email-input {
+  padding: 15px 16px;
+}
+
+.email-btn {
+  padding: 10px 62px 10px 29px;
+  margin-left: 12px;
+}
+
 /* ----------------------------Portfolio------------------------- */
 
 /* Button portfolio */
