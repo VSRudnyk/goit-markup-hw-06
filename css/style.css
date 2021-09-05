@@ -287,40 +287,74 @@ img {
 .form {
   padding: 40px;
 }
+
+.form-fild-titel {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
 .form-fild {
   display: flex;
   flex-direction: column;
 }
 
-.form-fild textarea,
-.form-fild input {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.form-fild label {
+.form-lable {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
   color: var(--secondary-text-color);
+  margin-bottom: 4px;
 }
 
-.form-fild input {
+.form-container {
+  position: relative;
+  display: block;
+  width: 100%;
   margin-bottom: 10px;
 }
 
-.form-fild textarea {
-  resize: none;
-  height: 120px;
-  padding: 12px 16px;
-  margin-bottom: 20px;
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 11px 12px 11px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-.form-fild textarea::placeholder {
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  transform: translateY(-50%);
+
+  fill: var(--primary-text-color);
+}
+
+.form-textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+}
+
+.form-textarea::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -329,54 +363,49 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-fild-titel {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-  color: var(--primary-text-color);
-}
-
-.form-fild .agreement {
+.form-checkbox {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-input {
+  align-items: center;
+}
+
+.checkbox-lable {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  color: var(--secondary-text-color);
 }
-.agreement label {
-  margin-left: 8px;
-}
-.agreement a {
+
+.checkbox-lable a {
   color: var(--accent-color);
 }
 
-.form-btn {
-  width: 200px;
-  height: 50px;
-  padding: 10px 55px;
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  color: var(--white-text-color);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-}
-.qwer {
+.form-button {
   display: flex;
   justify-content: center;
 }
+
+.form-btn {
+  font-weight: var(--font-weight-700);
+  font-size: var(--font-size-16);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  cursor: pointer;
+  padding: 10px 55px;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* --------------------- Peculiarities ------------------- */
 .peculiarities {
   padding-top: 94px;
