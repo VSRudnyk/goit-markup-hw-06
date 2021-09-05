@@ -327,10 +327,12 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:not(:placeholder-shown) + .form-icon {
-  fill: var(--accent-color);
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .form-icon {
@@ -341,6 +343,11 @@ img {
   transform: translateY(-50%);
 
   fill: var(--primary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
 }
 
 .form-textarea {
@@ -371,8 +378,8 @@ img {
 }
 
 .checkbox-icon {
-  display: inline-block;
-  width: 15px;
+  display: block;
+  width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 4px;
@@ -381,7 +388,7 @@ img {
 .checkbox-input:checked + .checkbox-icon {
   border-color: var(--accent-color);
   background-image: url(../images/checked.svg);
-  background-size: cover;
+  background-size: contain;
   background-origin: border-box;
 }
 
