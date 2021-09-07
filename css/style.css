@@ -378,21 +378,15 @@ img {
 }
 
 .checkbox-icon {
-  display: block;
   width: 16px;
   height: 15px;
+  border-radius: 2px;
   border: 2px solid var(--primary-text-color);
-  border-radius: 4px;
 }
 
 .checkbox-input:checked + .checkbox-icon {
-  border-color: var(--accent-color);
+  border: none;
   background-color: var(--accent-color);
-  background-image: url(../images/checked.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-origin: content-box;
 }
 
 .checkbox-input {
